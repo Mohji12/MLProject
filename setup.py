@@ -17,3 +17,13 @@ def get_requirement(file_path:str)->List[str]:
             requirement.remove(hypen_e_dot)
     return requirement
 
+setup(
+    name = "my_package",
+    version = "0.0.1",
+    author='Mohan',
+    author_email="Mohangola47@gmail.com",
+    packages=find_packages(),
+    install_requires=get_requirement("requirements.txt"),
+    description = "This is my first package"
+)
+
